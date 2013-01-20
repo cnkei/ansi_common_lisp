@@ -1,4 +1,4 @@
-#!/bin/clisp.exe
+#!/usr/bin/sbcl --script
 
 (defun larger (x y)
   (if (> x y)

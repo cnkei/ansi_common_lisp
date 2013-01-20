@@ -1,4 +1,4 @@
-#!/bin/clisp.exe
+#!/usr/bin/sbcl --script
 
 (defun summit-a (lst)
   (remove nil lst)

@@ -1,4 +1,4 @@
-#!/bin/clisp.exe
+#!/usr/bin/sbcl --script
 
 (format t "(a) > (car (x (cdr '(a (b c) d)))) = ~A~%"
         (car (car (cdr '(a (b c) d)))))

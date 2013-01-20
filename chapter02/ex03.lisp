@@ -1,4 +1,4 @@
-#!/bin/clisp.exe
+#!/usr/bin/sbcl --script
 
 (setf test-a nil)
 (setf test-b '(1))

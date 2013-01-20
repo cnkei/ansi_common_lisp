@@ -1,4 +1,4 @@
-#!/bin/clisp.exe
+#!/usr/bin/sbcl --script
 
 (format t "(a) ~A~%"
         (equal (+ (- 5 1) (+ 3 7))

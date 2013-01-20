@@ -1,4 +1,4 @@
-#!/bin/clisp.exe
+#!/usr/bin/sbcl --script
 
 (format t "~A ~A ~A~%"
         (cons 'a '(b c))
