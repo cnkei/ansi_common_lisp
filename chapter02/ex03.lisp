@@ -1,4 +1,4 @@
-#!/usr/bin/sbcl --script
+#! sbcl --script
 
 (setf test-a nil)
 (setf test-b '(1))

@@ -1,4 +1,4 @@
-#!/usr/bin/sbcl --script
+#! sbcl --script
 
 (defun larger (x y)
   (if (> x y)

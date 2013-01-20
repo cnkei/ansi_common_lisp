@@ -1,4 +1,4 @@
-#!/usr/bin/sbcl --script
+#! sbcl --script
 
 (defun enigma (x)
   (and (not (null x))

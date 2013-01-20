@@ -1,4 +1,4 @@
-#!/usr/bin/sbcl --script
+#! sbcl --script
 
 (defun listinlistp (xs)
   (if (null xs)

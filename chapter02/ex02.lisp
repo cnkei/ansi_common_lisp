@@ -1,4 +1,4 @@
-#!/usr/bin/sbcl --script
+#! sbcl --script
 
 (format t "~A ~A ~A~%"
         (cons 'a '(b c))

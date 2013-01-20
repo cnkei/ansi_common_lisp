@@ -1,4 +1,4 @@
-#!/usr/bin/sbcl --script
+#! sbcl --script
 
 (defun summit-a (lst)
   (remove nil lst)

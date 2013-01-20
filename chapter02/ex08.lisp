@@ -1,4 +1,4 @@
-#!/usr/bin/sbcl --script
+#! sbcl --script
 
 (defun printdots-i (n)
   (dotimes (x n)
