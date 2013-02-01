@@ -1,0 +1,7 @@
+(defun occurrences (xs)
+  (let ((occ nil))
+    (dolist (x xs (sort occ #'> :key #'cdr))
+      (let ((pair (assoc x occ :test #'eql)))
+        (if (null pair)
+          (setf occ (cons (cons x 1) occ))
+          (incf (cdr pair)))))))
