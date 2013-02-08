@@ -1,0 +1,13 @@
+(defun quarter-turn (array)
+  (if (or (null array)
+          (not (arrayp array))
+          (not (equal 2 (array-rank array))))
+    nil
+    (let ((n (array-dimension array 0)))
+      (if (equal n (array-dimension array 1))
+        (let ((result (make-array (list n n))))
+          (dotimes (x n)
+            (dotimes (y n)
+              (setf (aref result y (- (1- n) x)) (aref array x y))))
+          result)
+        nil))))

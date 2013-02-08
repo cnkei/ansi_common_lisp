@@ -1,0 +1,13 @@
+(defun assoc->hash (xs)
+  (let ((h (make-hash-table)))
+    (mapcar (lambda (pair)
+              (setf (gethash (car pair) h) (cdr pair)))
+            xs)
+    h))
+
+(defun hash->assoc (hash)
+  (let (table)
+    (maphash (lambda (k v)
+               (push (cons k v) table))
+             hash)
+    table))
